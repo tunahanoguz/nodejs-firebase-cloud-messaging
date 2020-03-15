@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-firebase-cloud-messaging",
+  "version": "1.0.0",
+  "description": "Sending Firebase notification on Node.js server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs firebase admin",
+    "nodejs firebase cloud messaging"
+  ],
+  "author": "Tunahan Oğuz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fcm-notification": "^2.0.0"
+  }
+}
