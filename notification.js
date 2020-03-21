@@ -7,8 +7,10 @@ const FCM = new fcm(serviceAccount);
 router.post('/send-single-notification', (req, res) => {
     const {title, body, token} = req.body;
     const message = {
-        title,
-        body,
+        notification: {
+            title,
+            body,
+        },
         token,
     };
 
@@ -24,8 +26,10 @@ router.post('/send-single-notification', (req, res) => {
 router.post('/send-multiple-notification', (req, res) => {
     const {title, body, tokens} = req.body;
     const message = {
-        title,
-        body,
+        notification: {
+            title,
+            body,
+        },
     };
 
     FCM.sendToMultipleToken(message, tokens, (err, response) => {
